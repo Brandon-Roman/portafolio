@@ -1,0 +1,45 @@
+.introduccion{
+    padding: 64px 64px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/perfil.jpg);
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position: calc(100% - 64px);
+    font-family: raleway;
+}
+
+.introduccion__sobre{
+    font-size: 3.25rem;
+    width: 1000px;
+    margin-bottom: 2rem;
+}
+
+.introduccion__formacion{
+    width: 970px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.redes__lista{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    justify-content:calc(100%);
+}
+
+.redes__item{
+    margin-right: 3.5%;
+    padding-right: 10%;
+}
+
+.redes__link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.redes__link--imagen{
+    width: 2rem;
+}

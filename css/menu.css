@@ -1,0 +1,30 @@
+.menu{
+    padding: 1.5rem 64px;
+    display: flex;
+    justify-content: space-between;
+   background: #864646;
+   font-family: raleway;
+}
+
+.menu__titulo{
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.menu__lista{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu__lista__item{
+    padding: 5px;
+    margin-right: 1rem;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.menu__lista__link{
+    text-decoration: none;
+    color: #000000;
+}

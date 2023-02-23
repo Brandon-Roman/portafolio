@@ -1,0 +1,32 @@
+.sobre{
+    background: #2e9243;
+    font-family: raleway;
+    font-weight: 400;
+}
+
+.sobre__mi{
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
+    gap: 10px;
+    width: 1440px;
+    height: 383px;
+}
+
+.sobre__titulo{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 38px;
+}
+
+.sobre__Descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 10px 0;
+}
+
+.sobre__firma{
+    width: 200px;
+    height: 100px;
+}
