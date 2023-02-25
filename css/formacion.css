@@ -1,0 +1,54 @@
+.academica{
+    font-family: raleway;
+    padding: 5rem 4rem;
+    margin-top: 5rem;
+    background-color: aqua;
+}
+
+.academica__titulo{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.academica__cursos{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 6.25rem;
+
+}
+
+.academica__cursos__caja{
+    width: 23rem;
+    height: 17.875rem;
+    background: #abb424;
+
+
+}
+
+.academica__cursos__lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.academica__cursos__item__img{  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 23rem;
+   height: 17.875rem;
+}
+
+.academica__cursos__item__titulo{
+    font-weight: 700;
+    font-size: 1.375rem;
+    padding-top: 1rem;
+}
+
+.academica__cursos__item__subtitulo{
+    font-weight: 500;
+    padding-top: 1rem;
+}

@@ -1,0 +1,29 @@
+.skills{
+    font-family: raleway;
+    padding: 64px;
+}
+
+.skills__titulo{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.skills__linea{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.skills__caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background: #7e1b1b;
+}

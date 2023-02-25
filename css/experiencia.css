@@ -1,0 +1,68 @@
+.experiencia{
+    font-family: raleway;
+    padding: 4rem;
+}
+
+.experiencia__seccion__titulo{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.experiencia__caja{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 4rem;
+}
+
+.experiencia__imagen{
+    width: 752px;
+    height: 406px;
+}
+
+.experiencia__informacion{
+display: flex;
+flex-direction: column;
+}
+
+.experiencia__titulo{
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.experiencia__texto{
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.experiencia__descripcion{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.experiencia__boton--repositorio{
+    width: 105px;
+    height: 51px;
+    color: rgba(42, 122, 228, 1);
+    background-color: #ffffff;
+    border: solid 1px;
+    border-color: rgba(42, 122, 228, 1);
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.experiencia__boton--demo{
+    width: 105px;
+    height: 51px;
+    color: #ffffff;
+    background-color: rgba(42, 122, 228, 1);
+    border: solid 1px;
+    border-color: rgba(42, 122, 228, 1);
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
