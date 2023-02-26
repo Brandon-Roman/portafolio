@@ -1,5 +1,5 @@
 .sobre{
-    background: #2e9243;
+    background: #ffffff;
     font-family: raleway;
     font-weight: 400;
 }
@@ -9,8 +9,6 @@
     flex-direction: column;
     padding: 64px;
     gap: 10px;
-    width: 1440px;
-    height: 383px;
 }
 
 .sobre__titulo{
@@ -21,9 +19,9 @@
 
 .sobre__Descripcion{
     display: flex;
-    flex-wrap: wrap;
-    width: 50%;
+    width: 70%;
     padding: 10px 0;
+    line-height: 19px;
 }
 
 .sobre__firma{

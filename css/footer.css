@@ -1,0 +1,10 @@
+.footer{
+    font-family: raleway;
+    padding: 4rem;
+}
+
+.footer__rodapie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

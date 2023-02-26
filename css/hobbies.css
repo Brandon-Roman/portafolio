@@ -1,13 +1,15 @@
 .hobbies{
     font-family: raleway;
     padding: 4rem;
-    margin-bottom: 5rem;
+    background-color: #000000;
 }
 
 .hobbies__titulo{
+    color: #ffffff;
     font-size: 2rem;
     text-align: center;
     font-weight: 700;
+    line-height: 38px;
 }
 
 
@@ -21,10 +23,19 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start;
     padding: 1rem;
-    gap: 8px;
     width: 176px;
     height: 174px;
-    background: #7e1b1b;
+    background: #ffffff;
+}
+
+.hobbies__img{
+    width: 40px;
+    height: 37px;
+
+}
+
+.hobbies__nombre{
+    font-weight: 700;
+    line-height: 19px;
 }
