@@ -1,18 +1,10 @@
 .introduccion{
     color: #ffffff;
     font-family: raleway;
-    padding: 4rem;
-    background-image: url(../img/vecteezy_banner-abstract-vector-background-board-for-text-and-message_5716919.jpg);
-}
-
-.introduccion__div{
-    display: flex;
-    flex-direction: row-reverse;
+    margin: 2rem 1rem;
 }
 
 .introduccion__imagen{
-    width: 368px;
-    height: 368px;
     border: solid 1px;
     border-color: none;
     border-radius: 50%;
@@ -24,14 +16,7 @@
     justify-content: space-evenly;
 }
 
-.introduccion__bio{
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 61px;
-}
-
 .introduccion__formacion{
-    margin-top: 2rem;
     font-size: 22px;
     line-height: 26px;
     font-weight: 700;
@@ -41,10 +26,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
-}
-.introduccion__redes__item{
-    padding-right: 20%;
-    text-align: center;
 }
 
 .introduccion__redes__link{
@@ -59,4 +40,90 @@
     border: solid 1px;
     border-radius: 25px;
     border-color: transparent;
+}
+
+
+@media (min-width:350px) {
+    .introduccion{
+        background: none;
+        margin: 2rem 1rem;
+        padding: 0;
+    }
+    .introduccion__div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+    .introduccion__imagen{
+        width: 33%;
+        height: 33%;
+    }
+
+    .introduccion__bio{
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .introduccion__redes{
+        width: 100% ;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .introduccion__redes__item{
+        padding-right: 10%;
+        text-align: center;
+    }
+}
+  
+@media (min-width: 768px) {
+    .introduccion{
+        margin: 0;
+        padding: 1rem;
+        background-image: url(../img/vecteezy_banner-abstract-vector-background-board-for-text-and-message_5716919.jpg);
+    }
+    
+    .introduccion__div{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
+
+    .introduccion__bio{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .introduccion__formacion {
+        margin-top: 1rem;
+    }
+    
+    .introduccion__redes{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .introduccion__redes__item{
+        padding-right: 20%;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .introduccion__imagen{
+    width: 368px;
+    height: 368px;
+    }
+
+    .introduccion__bio{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 61px;
+    }
+
+
 }

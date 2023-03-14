@@ -1,7 +1,6 @@
 .experiencia{
     font-family: raleway;
-    padding: 4rem;
-    background-color: blueviolet;
+    color: #ffffff;
 }
 
 .experiencia__seccion__titulo{
@@ -11,6 +10,7 @@
 }
 
 .experiencia__caja{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,12 +25,13 @@
     align-items: center;
     gap: 100px;
     padding-top: 4rem;
-
 }
 
 .experiencia__imagen{
     width: 752px;
     height: 406px;
+    border: solid 1px;
+    border-radius: 20px;
 }
 
 .experiencia__informacion{
@@ -55,24 +56,105 @@ flex-direction: column;
     gap: 10px;
 }
 
-.experiencia__boton--repositorio{
+.experiencia__boton--repositorio, .experiencia__boton--demo{
     width: 105px;
-    height: 51px;
-    color: rgba(42, 122, 228, 1);
-    background-color: #ffffff;
+    height: 51px;  
     border: solid 1px;
-    border-color: rgba(42, 122, 228, 1);
     border-radius: 5px;
     font-size: 1.1rem;
 }
 
-.experiencia__boton--demo{
-    width: 105px;
-    height: 51px;
+.experiencia__boton--repositorio{
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}  
+
+.experiencia__boton--repositorio:hover{
+    background-color: #000000;
     color: #ffffff;
-    background-color: rgba(42, 122, 228, 1);
-    border: solid 1px;
-    border-color: rgba(42, 122, 228, 1);
-    border-radius: 5px;
-    font-size: 1.1rem;
+    transition: 500ms;
 }
+
+.experiencia__boton--demo{
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.experiencia__boton--demo:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: 500ms;
+}
+
+@media (min-width: 350px){
+
+    .experiencia{
+        margin: 10rem 2rem;
+    }
+    
+    .experiencia__caja, .experiencia__caja--derecha{
+        flex-direction: column;
+        align-items: normal;
+        padding-top: 0;
+        margin-top: 2rem;
+        gap: 20px;
+    }
+
+    .experiencia__imagen{
+        width: auto;
+        height: auto;
+    }
+
+    .experiencia__boton--repositorio, .experiencia__boton--demo{
+        width: 8rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .experiencia__caja, .experiencia__caja--derecha {
+        padding-top: 4rem;
+    }
+
+    .experiencia__informacion{
+        gap: 8px;
+    }
+
+    .experiencia__boton--repositorio, .experiencia__boton--demo{
+        width: auto;
+    }
+}
+
+@media (min-width: 1100px) {
+    .experiencia__caja{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .experiencia__caja--derecha{
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+        .experiencia__imagen{
+            width: 752px;
+            height: 406px;
+            border: solid 1px;
+            border-radius: 20px;
+        }
+
+        .experiencia__boton--repositorio, .experiencia__boton--demo{
+            width: 105px;
+            height: 51px;  
+            border: solid 1px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+}
+

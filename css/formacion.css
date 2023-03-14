@@ -1,15 +1,12 @@
 .academica{
     font-family: raleway;
-    padding: 5rem 4rem;
-    margin-top: 5rem;
-    background-color: aqua;
+    color: #ffffff;
 }
 
 .academica__titulo{
     font-weight: 700;
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 5rem;
 }
 
 .academica__cursos{
@@ -18,15 +15,12 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 gap: 6.25rem;
-
 }
 
 .academica__cursos__caja{
-    width: 23rem;
-    height: 17.875rem;
-    background: #abb424;
-
-
+    background: #ffffff;
+    border: solid 1px #281cd4;
+    border-radius: 20px;
 }
 
 .academica__cursos__lista{
@@ -38,17 +32,98 @@ gap: 6.25rem;
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 23rem;
-   height: 17.875rem;
+}
+
+.academica__cursos__imagen{
+    width: 190px;
+    height: 130px;
 }
 
 .academica__cursos__item__titulo{
     font-weight: 700;
     font-size: 1.375rem;
-    padding-top: 1rem;
+    line-height: 26px;
+    padding-top: 10px;
 }
 
 .academica__cursos__item__subtitulo{
-    font-weight: 500;
-    padding-top: 1rem;
+    line-height: 19px;
+}
+
+@media (min-width:350px){
+
+    .academica{
+        margin: 3rem 2rem;
+    }
+
+    .academica__titulo{
+        margin-bottom: 2rem;
+    }
+    .academica__cursos{
+        flex-direction: column;
+    }
+
+    .academica__cursos__caja{
+        width: 100%;
+        height: 130px;
+    }
+
+    .academica__cursos__item__img{
+        height: auto; 
+    }
+
+    .academica__cursos__item__titulo{
+        padding: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .academica__titulo{
+        margin-bottom: 5rem;
+    }
+
+    .academica__cursos{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+    }
+
+    .academica__cursos__caja{
+        width: 30%;
+        height: 118px;
+    }
+
+    
+    .academica__cursos__imagen{
+        width: auto;
+        height: 118px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .academica__cursos{
+        justify-content: center;
+        gap: 6.25rem;
+        }
+
+        .academica__cursos__caja{
+            width: 23rem;
+            height: 17.875rem;
+        }
+
+        .academica__cursos__item__img{  
+            height: 17.875rem;
+        }
+
+        .academica__cursos__imagen{
+            width: 190px;
+            height: 130px;
+        }
+
+    .academica__cursos__item__titulo{
+        padding-top: 10px;
+    }
+
 }

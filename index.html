@@ -33,20 +33,20 @@
                     <li class="menu__lista__item"><a class="menu__lista__link" href="#contacto">Contacto@Byrs.com</a></li>
                 </ul>
                 
-                <!--<li class="menu__list__item__contato"><a href="#contacto">contacto@fulana.com</a></li>-->
+                <li class="menu__list__item__contato"><a class="menu__lista__link" href="#contacto">contacto@Byrs.com</a></li>
             </nav>
         </section>
         <section class="introduccion">
             <div class="introduccion__div">
                 <img class="introduccion__imagen" src="img/perfil.jpg">
                 <div class="introduccion__container">
-                    <h2 class="introduccion__bio">Hola, mi nombre es Román Sánchez Brandon Yovani, tengo 24 años, vivo en Ciudad de México</h2>
+                    <h2 class="introduccion__bio">Román Sánchez Brandon Yovani, 24 años, vivo en Ciudad de México</h2>
                     <h3 class="introduccion__formacion">Recibido de bachillerato como auxiliar de diseñador grafico y actualmente estoy participando en el proyecto de Oracle ONE en Alura Latam</h3>
                     <ul class="introduccion__redes">
                         <li class="introduccion__redes__item"><a class="introduccion__redes__link" href="https://github.com/Brandon-Roman"><img class="redes__link--imagen" src="img/Octicons-mark-github.svg" alt="logo de github">Github</a></li>
                         <li class="introduccion__redes__item"><a class="introduccion__redes__link" href="https://www.linkedin.com/in/brandon-yovani-rom%C3%A1n-s%C3%A1nchez/"><img class="redes__link--imagen" src="img/768px-LinkedIn_logo_initials.png" alt="logo de linkedin">Linkedin</a></li>
                         <li class="introduccion__redes__item"><a class="introduccion__redes__link" href="https://www.instagram.com/bbyyrrsss/"><img class="redes__link--imagen" src="img/instagram.png" alt="logo de instagram">Instagram</a></li>
-                        <li class="introduccion__redes__item"><a class="introduccion__redes__link" href="#"><img class="redes__link--imagen" src="img/cv.png" alt="curriculum">CV</a></li>
+                        <li class="introduccion__redes__item"><a class="introduccion__redes__link" href="../challenge/nombre.pdf" download="cv"><img class="redes__link--imagen" src="img/cv.png" alt="curriculum">CV</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,7 +59,6 @@
                 <img  class="sobre__firma" src="img/firma.png">
             </div>
         </section>
-
         <section class="skills" id="skills">
             <h3 class="skills__titulo">Skills</h3>
             <div class="skills__linea">
@@ -156,23 +155,23 @@
                 <div class="academica__cursos__caja">
                     <ul class="academica__cursos__lista">
                         <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academica__cursos__item__img"><img src="img/ufpr_logo.png"></li>
-                        <li class="academica__cursos__item__titulo"><h4>Análisis de datos</h4></li>
-                        <li class="academica__cursos__item__subtitulo"><p>2018 - UFPR</p></li>
+                        <li class="academica__cursos__item__img"><img class="academica__cursos__imagen" src="img/colbach.png"></li>
+                        <li class="academica__cursos__item__titulo"><h4>Auxiliar en Diseño Gráfico</h4></li>
+                        <li class="academica__cursos__item__subtitulo"><p>2018 - Colegio de Bachilleres</p></li>
                     </ul>
                 </div>
                 <div class="academica__cursos__caja">
                     <ul class="academica__cursos__lista">
                         <!--Pon el logotipo de la institución de formación -->
-                        <li class="academica__cursos__item__img"><img src="img/alura_logo.png"></li>
-                        <li class="academica__cursos__item__titulo"><h4>Formación en UX Design</h4></li>
-                        <li class="academica__cursos__item__subtitulo"><p>2019 - Alura</p></li>
+                        <li class="academica__cursos__item__img"><img class="academica__cursos__imagen" src="img/alura_logo.png"></li>
+                        <li class="academica__cursos__item__titulo"><h4>Formación en Front end</h4></li>
+                        <li class="academica__cursos__item__subtitulo"><p>En curso - Alura</p></li>
                     </ul>
                 </div>
                 <div class="academica__cursos__caja">
                     <ul class="academica__cursos__lista">
                         <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academica__cursos__item__img"><img src="img/ufrj_logo.png"></li>
+                        <li class="academica__cursos__item__img"><img class="academica__cursos__imagen" src="img/ufrj_logo.png"></li>
                         <li class="academica__cursos__item__titulo"><h4>Posgrado en diseño</h4></li>
                         <li class="academica__cursos__item__subtitulo"><p>En curso - UFRJ</p></li>
                     </ul>
@@ -236,10 +235,22 @@
                     <h3 class="formcontato__subtexto">¿Quieres contactarme?</h3>
                     <h3 class="formcontato__subtexto">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                     <form class="formcontato__formulario" name="formulario">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">   
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensage" name="mensaje" placeholder="Mensaje"></textarea>
+                        <div class="formcontato__formulario">
+                            <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required pattern="^(?!.*[!@#$%^&*_=+-]).{1,50}$"  data-tipo="nombre">  
+                            <span class="span-error"></span> 
+                        </div>
+                        <div class="formcontato__formulario">
+                            <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required data-tipo="email">
+                            <span class="span-error"></span> 
+                        </div>
+                        <div class="formcontato__formulario">
+                            <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto" required pattern="^(?!.*[!@#$%^&*_=+-]).{1,50}$" data-tipo="asunto">
+                            <span class="span-error"></span> 
+                        </div class="formcontato__formulario">
+                        <div class="formcontato__formulario">
+                            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje" required  data-tipo="mensaje"></textarea>
+                            <span class="span-error"></span> 
+                        </div>
                         <button type="submit" class="formcontato__boton">Enviar mensaje</button>
                     </form>
                 </div>
@@ -252,5 +263,6 @@
             </div>
         </section>
     </div>
+    <script src="./js/app.js" type="module"></script>
     </body>
 </html>
